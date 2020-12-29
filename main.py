@@ -1,3 +1,4 @@
+# 100 Days of Code Practice Project
 # Rock Paper Scissors Game
 import random
 
@@ -27,10 +28,12 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-
+# Ascii art list
 game_images = [rock, paper, scissors]
 
 player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n\n"))
+
+# RPS game logic
 
 computer_choice = random.randint(0, 2)
 
@@ -49,6 +52,8 @@ elif computer_choice == 1:
   print(game_images[1])
 else:
   print(game_images[2])
+
+# Results Logic
 
 if player_choice == 0 and computer_choice == 1:
   print("You Lose")
